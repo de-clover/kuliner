@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+*{box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.font_pacifico{font-family: 'Pacifico', cursive;}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 외부에서 가져온 파일은 내가 작성할 파일보다 무조건 위쪽에 선언한다. -->
+    <script src="https://kit.fontawesome.com/c2a8ed99bd.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <!-- <i class="fab fa-facebook-f wow fadeInRight"></i> -->
+    <!-- <h1 class="wow fadeInRight">Title</h1> -->
+    <div id="header">
+        <div id="top">
+            <div class="wrap">
+                <div class="left">
+                    <ul>
+                        <li><p><i class="far fa-map"></i>&nbsp;Jl. Little Kyoto SA, 01 64521</p></li>
+                        <li><p><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 4669</p></li>
+                        <!-- <li><a href="tel:02356084669"><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 4669</a></li> -->
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#" target="_blank" title="페이스북 바로가기"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank" title="트위터 바로가기"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" title="핀터레스트 바로가기"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#" target="_blank" title="유투브 바로가기"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mailto:custmer@kuliner.com" title="메일보내기"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main"><!--배경 이미지 공간-->
+            <div class="dark"><!--배경이미지를 덮는 암막-->
+                <div class="wrap"><!--w1160; m0-auto-->
+                    <div class="logo">
+                        <a href=""><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">SPECIAL DISHES</a></li>
+                            <li><a href="">DISHES</a></li>
+                            <li><a href="">SERVICE</a></li>
+                        </ul>
+                        <div class="reserve_btn">
+                            <a href="#">RESERVATION</a>
+                        </div>
+                    </div>
+                </div><!--/.wrap ==> 헤더의 메뉴 공간-->
+                <div class="main_title">
+                    <div class="cont">
+                        <h1 class="font_pacifico">Premium food at affordable price.</h1>
+                        <p>A truly unique Danish food experience, you can get at lunch time in Kyoto</p>
+                        <ul>
+                            <li><a href="">learn more</a></li>
+                            <li><a href="">get the app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/.dark-->
+        </div><!--/#main-->
+
+
+        <div id="story">
+            <div class="wrap">
+                <div class="title_part">
+                    <h2 class="title font_pacifico">Discovery <span class="font_pacifico">Our Story</span></h2>
+                    <p class="sub_title">HI, WELCOME TO KULINER</p>
+                </div>
+                <div class="cont_part">
+                    <div class="img_part">
+                        <div class="image"></div>
+                    </div>
+                    <div class="txt_part">
+                        <p>In a country where understatement and simplicity reign, the unpretentious smorrebrod is a national dish. There are countless variations, from minimal to lavish, but all reflect straightforward Scandinavian sensibilities: simple, honest, local ingredients attractively presented with little waste</p>
+                        <a href=""><img src="./img/separator-img.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="deco_img">
+                    <img src="./img/description-1.png" alt="접시 데코 이미지">
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
+
+
+/*#header part*/
+#header{}
+#header #top{width: 100%; height: 30px; background-color: #000;}
+#header #top .wrap{width: 1160px; height: 100%; margin: 0 auto; /*background: #777;*/ color:#fff; padding: 0 10px;}
+#header #top .wrap .left{float: left;} /*부모 공간으로부터 좌측에 배치*/
+#header #top .wrap .left ul{}
+#header #top .wrap .left ul li{float: left; margin-right: 10px; /*background: #950;*/} /*내부에서 좌측 기준으로 가로 배치*/
+#header #top .wrap .left ul li p{line-height: 30px; font-size: 14px;}
+
+#header #top .wrap .right{float: right; padding: 8px 0;} /*부모 공간으로부터 우측에 배치*/
+#header #top .wrap .right ul{}
+#header #top .wrap .right ul li{float: left; margin-left: 10px; /*background: #000;*/}
+#header #top .wrap .right ul li a{display: block; line-height: 1; font-size: 14px; color:#fff;}
+#header #top .wrap .right ul li:hover a{color:#f60;}
+
+#header #main{width: 100%; height: 560px; background-image: url(../img/1.jpg); background-size: cover; background-position: 50% 50%; background-attachment: fixed;}
+#header #main .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+#header #main .dark .wrap{width: 1160px; height: 66px; margin: 0 auto; padding: 0 10px;}
+#header #main .dark .wrap .logo{float: left; padding: 17px 0;}
+#header #main .dark .wrap .logo a{}
+#header #main .dark .wrap .logo a img{display: block;}
+
+#header #main .dark .wrap .menu{float: right;}
+#header #main .dark .wrap .menu ul{float: left;}
+#header #main .dark .wrap .menu ul li{float: left;}
+#header #main .dark .wrap .menu ul li a{display: block; padding: 0 20px; line-height: 66px; font-size: 16px; color:#fff; font-weight: bold;}
+#header #main .dark .wrap .menu ul li:hover a{background-color: rgba(255,255,255,0.6); color:#f60;}
+
+#header #main .dark .wrap .menu .reserve_btn{float: left; width: 180px; height: 66px; /*background: #ff0;*/ text-align: right; padding-top: 12px;}
+#header #main .dark .wrap .menu .reserve_btn a{display: inline-block; padding: 10px 14px; border:1px solid #f60; background-color: #f60; color:#fff; border-radius:4px; font-size: 16px; font-weight: bold;}
+#header #main .dark .wrap .menu .reserve_btn a:hover{background-color: #fff; color:#f60;}
+
+#header #main .dark .main_title{
+    width: 1160px;
+    height: 494px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    /* background: #555; */
+}
+#header #main .dark .main_title .cont{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#fff;
+    /* background: #841; */
+}
+#header #main .dark .main_title .cont h1{font-size: 54px; line-height: 72px;}
+#header #main .dark .main_title .cont p{font-size: 16px; padding: 40px 0;}
+#header #main .dark .main_title .cont ul{font-size: 0;}
+#header #main .dark .main_title .cont ul li{display: inline-block; margin: 0 10px;}
+#header #main .dark .main_title .cont ul li a{display: block; font-size: 16px; width: 202px; height: 44px; border:1px solid #f60; border-radius: 8px; text-transform:capitalize; color:#fff; line-height: 42px;}
+#header #main .dark .main_title .cont ul li:hover a{background-color: rgba(255,255,255,0.4); color:#f60;}
+
+
+/*#story part*/
+#story{width: 100%; height: 600px; background: #ddd; overflow: hidden;}
+#story .wrap{width: 1160px; height: 100%; padding: 0 10px; margin: 0 auto; background: #ffa;}
+#story .wrap .title_part{padding-top: 60px; padding-bottom: 40px; text-align: center;}
+#story .wrap .title_part h2{font-size: 54px; line-height: 72px; color:#555;}
+#story .wrap .title_part h2 span{color:#f60;}
+#story .wrap .title_part p{font-size: 16px; color:#555; padding-top: 20px;}
+
+#story .wrap .cont_part{font-size: 0;}
+#story .wrap .cont_part > div{display: inline-block; vertical-align: middle; width: 50%; padding: 0 15px; font-size: 16px; }
+#story .wrap .cont_part > div.img_part{height: 200px; /*background: #aff;*/}
+#story .wrap .cont_part > div.img_part .image{width: 100%; height: 100%; background-color: #aaf; background-image: url(../img/cook-01.jpg); background-size: cover; background-position: 50% 50%; border-radius:8px;}
+
+#story .wrap .cont_part > div.txt_part{/*background: #faa;*/ text-align: center;}
+
+#story .wrap .cont_part > div.txt_part p{color:#555; padding-bottom: 40px;}
+
+#story .wrap .cont_part > div.txt_part a{display: inline-block; height: 19px;}
+#story .wrap .cont_part > div.txt_part a img{}
+
+#story .wrap .deco_img{padding-top: 100px;}
+#story .wrap .deco_img img{width: 100%;}
