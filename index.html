@@ -381,10 +381,6 @@
         }
     </script> -->
 
-    <div id="topBtn">
-        <a href="#header"><i class="fas fa-chevron-up"></i></a>
-    </div>
-
     <!-- 자바스크립트는 문서의 모든 로딩 종료된 상태에서 기능이 부여되도록 문서의 하단에 위치시킨다.  -->
     <!-- 카카오맵 자바스크립트 -->
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b355836b7fb9b152d80aff85bf9129f2"></script>
@@ -417,6 +413,23 @@
                 <div class="title">
                     <h2 class="font_pacifico wow fadeInUp"  data-wow-delay="0.0s">Register</h2>
                 </div>
+                <!-- <div class="cont">선생님 코드
+                    <form action="서버 프로그램 문서" method="post"><p>사용자의 입력한 모든 내용을 data base라는 곳에 전달하기 위한 도구</p>
+                        <div class="input_line">
+                            <input type="text" name="userid" id="user_id" placeholder="ID">
+                        </div>
+                        <div class="input_line">
+                            <input type="password" name="userpw" id="user_pw" placeholder="PASSWORD">
+                        </div>
+                        <div class="input_line">
+                            <input type="password" name="userpw_confirm" id="userpw_confirm" placeholder="PASSWORD CONFIRM">
+                        </div>
+                        <div class="input_line">
+                            <input type="email" name="useremail" id="user_email" placeholder="E-MAIL">
+                        </div>
+                        <input type="checkbox" name="agree_email">&nbsp;Send our info to your e-mail
+                    </form>
+                </div> -->
                 <div class="input_info">
                     <input type="text" id="userid" name="user_id" placeholder="ID"required autocomplete="off"><br>
                     <input type="password" id="userpw" name="user_pw" placeholder="PASSWORD" required><br>
@@ -450,6 +463,10 @@
         </div>
     </div>
 
+    <div id="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         //f(x) = x + 1 = ?
@@ -471,6 +488,10 @@
             });
             $(".service").click(function(){
                 $("html, body").animate({scrollTop:$("#service").offset().top}, 1000);
+                return false;
+            });
+            $(".offer").click(function(){
+                $("html, body").animate({scrollTop:$("#offer").offset().top}, 1000);
                 return false;
             });
             //상단으로 이동시키는 버튼
